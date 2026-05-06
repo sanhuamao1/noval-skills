@@ -1,0 +1,30 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(**)",
+      "Write(章节/**)",
+      "Write(草稿/**)",
+      "Write(.claude/workspace/**)",
+      "Write(temp/**)",
+      "Bash(git *)",
+      "Bash(ls *)",
+      "Bash(dir *)",
+      "Bash(type *)",
+      "Glob(**)",
+      "Grep(**)",
+      "Bash(cd \"d:/shm-novel\" && python .claude/hooks/insertToOutline.py)"
+    ],
+    "deny": [
+      "Bash(pip *)",
+      "Bash(rm -rf *)",
+      "Bash(del *)",
+      "Bash(rd /s *)",
+      "Bash(sudo *)",
+      "Bash(eval *)",
+      "Bash(chmod *)",
+      "Write(.claude/settings.json)",
+      "Write(.claude/agents/**)",
+      "Write(CLAUDE.md)"
+    ]
+  }
+}
